@@ -1,1 +1,35 @@
-/*index page*/
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , "initial-scale=1">
+    <meta name="description" content="Description of the page content" />
+    <title>iTunes Search Project</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet " crossorigin="anonymous ">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>iTunes Music Search</h1>
+                <div class="form-group">
+                    <label for="searchTerm">Search Here:</label> <input class="form-control" id="searchTerm" placeholder="Enter a song title or artist's name..." type="text">
+                </div>
+                <input class="btn btn-primary" onclick="search()" type="button" value="Search">
+            </div>
+        </div>
+        <div class="row" onclick="fadeIn">
+            <hr>
+            <h5>****Search Results****</h5>
+            <hr>
+        </div>
+    </div>
+    <div class="row" id="results"></div>
+</body>
+</html>
+
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
