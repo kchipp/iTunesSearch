@@ -1,0 +1,46 @@
+h1{
+    color:#D0F4EA;
+    font-family: Segoe UI Black;
+}
+h5{
+    color: #E8FCC2;
+}
+h6{
+    color: #D0F4EA;
+}
+body{
+    background-color: #545F66;
+}
+
+li p{
+    margin-bottom: 2px;
+}
+
+.metadata-category{
+    color: #777;
+}
+
+.results-header{
+    margin-bottom: 30px;
+}
+
+.btn{
+    color: #B1CC74;
+    margin: 20px auto 30px;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #B1CC74;
+    border-color: #29BBBF;
+}
+.btn:hover{
+    background: #E8FCC2;  
+    border-color: #B1CC74;
+}
+.btn:focus{
+    background:#829399;
+    border-color: #B1CC74
+}
+.btn:active{
+    background-color: #29BBBF
+}
