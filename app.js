@@ -13,18 +13,25 @@ function search(){
 			  info += '<h6>' + song.artistName + '</h6>';
 			  info += '<p>' + song.collectionName + '</p>';
               info += '<p>' + song.primaryGenreName + '</p>';
-              info += '<p>' + song.collectionPrice + '</p>';
-              info += '<p>' + song.trackPrice + '<br><br></p>';
+              info += '<p>' + song.collectionPrice + '<br><br></p>';
 			  info += '</center></div>';
 			  songs += info;
             });
 
             $('#results').html(songs);
+			
+			if(items.resultCount == 0)
+            {
+              var nothingFound = "Sorry, no results matched your search for " + $('#searchTerm').val();
+			  
+              $('#results').html('<div class="col-sm-12"><center><h4>' + nothingFound + '</h4></center></div>');
+            }
+
           }
         });
 	}
 	catch (e){
-		return "Sorry, no results matched your search ...Refresh the page and try again.";
+		return "Sorry, there is a issue with your search ...Refresh the page and try again.";
 	}
 	
 
