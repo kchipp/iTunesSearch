@@ -44,3 +44,13 @@ li p{
 .btn:active{
     background-color: #29BBBF
 }
+.jumbotron{
+    position: relative;
+    background: #000 url("music.jpg") center center;
+    width: 100%;
+    height: 30%;
+    background-size: cover;
+    overflow: hidden;
+    font-family: Segoe UI Black;
+    color: #B1CC74
+}
